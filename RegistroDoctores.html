@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  
+<title> REGISTRO PACIENTES Y DOCTORES </title>
+
+
+<link href="./CSS.css" rel="stylesheet" >
+
+
+<main>
+    
+</main>
+
+</head>
+<body>
+
+                <header>
+                    <h1>REGISTRO DOCTORES</h1>
+                    <nav>
+                        <a href="Pacientesydoctores.html">Inicio</a>
+                        <a href="./RegistroDoctores.html">Registro Doctores</a>
+                        <a href="./RegistroPacientes.html">Registro Pacientes</a>
+                        <a href="./ListaDoctores.html">Lista Doctores</a>
+                        <a href="./ListaPacientes.html">Lista Pacientes</a>
+                    </nav>
+                </header>
+<main>
+        <h2>Registro Doctores</h2>
+        <form id="Doctorform">
+
+        <label for="NombreDoctor">Nombre:</label>
+        <input type="text" id="NombreDoctor"> <br>
+        
+        <label for="ApellidoDoctor">Apellido:</label>
+        <input type="text" id="ApellidoDoctor"> <br>
+
+        <label for="NumerocedulaDoctor">Cedula:</label>
+        <input type="text" id="NumerocedulaDoctor"> <br>
+
+
+        <label for="EspeciaidadDoctor">Especiaidad Doctor:</label>
+        <select name="EspeciaidadDoctor"id="EspecialidadDoctor" required
+            <option value="Blanco"></option>
+            <option value="MedicinaGeneral">Medicina General</option>
+            <option value="Cardiologia">Cardiología</option>
+            <option value="MedicinaInterna">Medicina interna</option>
+            <option value="Dermatologia">Dermatología</option>
+            <option value="RehabilitacionFisica">Rehabilitación física</option>
+            <option value="Psicologia">Psicología</option>
+            <option value="Odontologia">Odontología</option>
+            <option value="Radiologia">Radiología</option>     
+        </select> <br>
+
+        <label for="ConsultorioDoctor">Consultorio (De 3 Digitos):</label>
+        <input type="text" id="ConsultorioDoctor"> <br>
+
+        <label for="CorreoDoctor">Correo:</label>
+        <input type="text" id="CorreoDoctor"> <br>
+        
+    
+        <button type="submit">Registrar Doctor</button>
+     
+     
+        
+
+        </form><br>   
+
+</main>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="./JS.js"></script>
+</html>

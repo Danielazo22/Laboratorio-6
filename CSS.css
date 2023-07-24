@@ -1,0 +1,53 @@
+
+
+    
+    .imagen{
+
+        width: 1320px;
+        height: 550px;
+        padding: 8px;
+
+    }
+    #Nombre{
+        border: solid 10px;
+        padding: 8px;
+    }
+
+
+    #Pacienteform{
+        padding: 15px;
+        border: solid 5px;
+    }
+    input{
+
+        font-family: inherit;
+        font-size: 50%;
+        padding: 7px;
+        margin: auto;
+        width: 10%;
+    }
+    legend{
+        border: solid 1px;
+        border-radius: 15px;
+        background-color: grey;
+    }
+
+    #Doctorform{
+        padding: 15px;
+        border: solid 5px;
+    }
+
+    nav{
+
+        border: solid 2px;
+        border-radius: 10px;
+        background-color: gray;
+    }
+
+body{
+
+    background-color: paleturquoise;
+    justify-content: space-around;
+    align-items: center;
+}
+
