@@ -1,24 +1,25 @@
 
-document.addEventListener("submit",registrarpaciente)
+Pacienteform.addEventListener("submit", registrarpaciente)
 
-function registrarpaciente(event){
+
+function registrarpaciente(event) {
     event.preventDefault()
 
     const NombrePaciente = document.getElementById("NombrePaciente").value
-    const ApellidoPaciente = document.getElementById("ApellidoPaciente").value 
-    const NumerocedulaPaciente = document.getElementById("NumerocedulaPaciente").value 
+    const ApellidoPaciente = document.getElementById("ApellidoPaciente").value
+    const NumerocedulaPaciente = document.getElementById("NumerocedulaPaciente").value
     const EdadPaciente = document.getElementById("EdadPaciente").value
     const CorreoPaciente = document.getElementById("CorreoPaciente").value
     const TelefonoPaciente = document.getElementById("TelefonoPaciente").value
-   
 
-    var expRegnombreP= /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
+
+    var expRegnombreP = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
     var nombrevalido = expRegnombreP.test(NombrePaciente);
 
 
-    if (!nombrevalido){
+    if (!nombrevalido) {
         alert("El nombre no es valido  ")
-    }else{
+    } else {
 
         alert("El nombre es valido  ")
     }
@@ -26,53 +27,53 @@ function registrarpaciente(event){
     console.log(NombrePaciente)
 
 
-    var expRegApellidoP= /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
+    var expRegApellidoP = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
     var Apellidovalido = expRegApellidoP.test(ApellidoPaciente);
 
 
-    if (!Apellidovalido){
+    if (!Apellidovalido) {
         alert("El Apellido no es valido  ")
-    }else{
+    } else {
 
         alert("El Apellido es valido  ")
     }
 
     console.log(ApellidoPaciente)
 
-    var expRegCedulaP= /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/;
+    var expRegCedulaP = /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/;
     var Cedulavalida = expRegCedulaP.test(NumerocedulaPaciente);
 
 
-    if (!Cedulavalida){
+    if (!Cedulavalida) {
         alert("La cédula no es valida  ")
-    }else{
+    } else {
 
         alert("La cédula es valida  ")
     }
 
     console.log(NumerocedulaPaciente)
-    
+
     var expRegconsultorioP = /^\D*\d{2}$/;
     var edadvalida = expRegconsultorioP.test(EdadPaciente);
 
-    if(!edadvalida){
+    if (!edadvalida) {
 
         alert("Edad no es valida")
-    }else{
+    } else {
 
         alert("Edad es válida")
     }
 
     console.log(EdadPaciente)
-    
 
-    var expRegcorreoP= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+    var expRegcorreoP = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     var Correovalido = expRegcorreoP.test(CorreoPaciente);
 
-    if(!Correovalido){
+    if (!Correovalido) {
 
         alert("Correo no es valido")
-    }else{
+    } else {
 
         alert("Correo es válido")
     }
@@ -82,10 +83,10 @@ function registrarpaciente(event){
     var expRegtelefonoP = /^\D*\d{10}$/;
     var telefonovalido = expRegtelefonoP.test(TelefonoPaciente);
 
-    if(!telefonovalido){
+    if (!telefonovalido) {
 
         alert("Telefono no es valido")
-    }else{
+    } else {
 
         alert("Telefono es válido")
     }
